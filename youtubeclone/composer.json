@@ -1,0 +1,20 @@
+{
+    "name": "nora/youtube-projektas",
+    "description": "simple youtube clone app",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Controllers\\": "controllers/",
+            "Models\\": "models/"
+        }
+    },
+    "authors": [
+        {
+            "name": "norazabulyte",
+            "email": "117632270+norazabulyte@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "klein/klein": "^2.1"
+    }
+}

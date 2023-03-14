@@ -2,4 +2,4 @@
 
 require_once 'vendor/autoload.php';
 
-echo 'djld';
+echo \Nora\Pirmas\Hi::say();
