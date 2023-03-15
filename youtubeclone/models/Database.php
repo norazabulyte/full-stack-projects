@@ -35,8 +35,6 @@ abstract class Database {
     public function addRecord($data) {
         $keys = implode(', ', array_keys($data));
         $placeholder = implode(', ', array_fill(0, count($data), "'%s'"));
-        //echo "INSERT INTO `videos` ($keys) VALUES ($placeholder)";
-        //echo vsprintf("INSERT INTO videos ($keys) VALUES ($placeholder)", $data);
         
         self::$db->query(
             vsprintf("INSERT INTO $this->table ($keys) VALUES ($placeholder)", $data)
